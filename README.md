@@ -18,6 +18,9 @@ languages (see `$VIMRUNTIME/autoload`). This is a lightweight alternative to usi
 |syntaxcomplete.vim|from syntax highlighting|
 |xmlcomplete.vim|XML (uses files in the xml directory)|
 
+These `omnifunc` functions are set automatically when file type is detected.
+User does not have to do anything.
+
 In addition, any user defined `omnifunc` can also be used for autocompletion.
 
 # Requirements
