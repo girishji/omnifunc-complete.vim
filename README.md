@@ -6,7 +6,6 @@ This plugin sources autocompletion items emitted by the function set in `omnifun
 Vim provides language based autocompletion through Omni completion for many
 languages (see `$VIMRUNTIME/autoload`). This is a lightweight alternative to using LSP.
 
-|   |   |
 |---|---|
 |ccomplete.vim|C|
 |csscomplete.vim|HTML / CSS|
