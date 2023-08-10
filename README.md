@@ -6,16 +6,19 @@ This plugin sources autocompletion items emitted by the function set in `omnifun
 Vim provides language based autocompletion through Omni completion for many
 languages (see `$VIMRUNTIME/autoload`). This is a lightweight alternative to using LSP.
 
----|---
-ccomplete.vim|C
-csscomplete.vim|HTML / CSS
-htmlcomplete.vim|HTML
-javascriptcomplete.vim|Javascript
-phpcomplete.vim|PHP
-pythoncomplete.vim|Python
-rubycomplete.vim|Ruby
-syntaxcomplete.vim|from syntax highlighting
-xmlcomplete.vim|XML (uses files in the xml directory)
+|   |   |
+|---|---|
+|ccomplete.vim|C|
+|csscomplete.vim|HTML / CSS|
+|htmlcomplete.vim|HTML|
+|javascriptcomplete.vim|Javascript|
+|phpcomplete.vim|PHP|
+|pythoncomplete.vim|Python|
+|rubycomplete.vim|Ruby|
+|syntaxcomplete.vim|from syntax highlighting|
+|xmlcomplete.vim|XML (uses files in the xml directory)|
+
+In addition, any user defined `omnifunc` can also be used for autocompletion.
 
 # Requirements
 
@@ -55,6 +58,7 @@ export var options: dict<any> = {
     enable: true,    # 'false' to disable this extension
     priority: 8,     # Higher priority items are shown at the top
     maxCount: 10,    # Maximum number of items shown
+    filetypes: ['python', 'javascript'], # Any filetype that has 'omnifunc' set
     dup: true,       # `true` allows duplicate completion words
     partialWord: ['python3complete#Complete'], # python3complete returns
                         # partial words like 'ow()' instead of 'pow()'

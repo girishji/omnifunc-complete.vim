@@ -3,6 +3,7 @@ vim9script
 export var options: dict<any> = {
     maxCount: 10,
     dup: true,
+    filetypes: ['python', 'javascript'],
     partialWord: ['python3complete#Complete'], # returns 'ow()' instead of 'pow()' when completing builtins.p
 }
 

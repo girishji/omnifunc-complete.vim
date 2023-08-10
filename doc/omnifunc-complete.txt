@@ -33,6 +33,8 @@ rubycomplete.vim	Ruby
 syntaxcomplete.vim	from syntax highlighting
 xmlcomplete.vim		XML (uses files in the xml directory)
 
+In addition, any user defined `omnifunc` can also be used for autocompletion.
+
 ==============================================================================
 2. Requirements				*omnifunc-complete-requirements*
 
@@ -71,6 +73,7 @@ Default options are as follows.
 	    enable: true,    # 'false' to disable this extension
 	    priority: 8,     # Higher priority items are shown at the top
 	    maxCount: 10,    # Maximum number of items shown
+	    filetypes: ['python', 'javascript'], # Any filetype that has 'omnifunc' set
 	    dup: true,       # `true` allows duplicate completion words
 	    partialWord: ['python3complete#Complete'], # python3complete 
   		# returns partial words like 'ow()' instead of 'pow()'
