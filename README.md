@@ -23,6 +23,9 @@ User does not have to do anything.
 
 In addition, any user defined `omnifunc` can also be used for autocompletion.
 
+**Note:** If you are using [LSP extension](https://github.com/girishji/lsp-complete.vim),
+it should be disabled.
+
 # Requirements
 
 - Vim >= 9.0
