@@ -11,10 +11,10 @@ import autoload '../autoload/omnicomplete.vim' as complete
 def Register()
     var o = complete.options
     if !o->has_key('enable') || o.enable
-	var ftypes = o->get('filetypes', ['python', 'javascript'])
-	vimcompletor.Register('omnifunc', complete.Completor, ftypes, o->get('priority', 8))
+        var ftypes = o->get('filetypes', ['python', 'javascript'])
+        vimcompletor.Register('omnifunc', complete.Completor, ftypes, o->get('priority', 8))
     else
-	vimcompletor.Unregister('omnifunc')
+        vimcompletor.Unregister('omnifunc')
     endif
 enddef
 
@@ -23,8 +23,8 @@ autocmd User VimCompleteLoaded ++once Register()
 def OptionsChanged()
     var opts = vimcompletor.GetOptions('omnifunc')
     if !opts->empty()
-	complete.options->extend(opts)
-	Register()
+        complete.options->extend(opts)
+        Register()
     endif
 enddef
 
