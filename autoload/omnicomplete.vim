@@ -25,6 +25,9 @@ export def Completor(findstart: number, base: string): any
         return 1
     endif
     var items = Omnifunc(findstart, partial ? base->slice(prefix->len()) : base)
+    if items->empty()
+        return []
+    endif
     if partial
         items->map((_, v) => {
             v.word = v.abbr
