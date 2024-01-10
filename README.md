@@ -1,3 +1,11 @@
+> [!CAUTION]
+> THIS PLUGIN IS NO LONGER NEEDED.
+> The functionality is already merged into [vimcomplete](https://github.com/girishji/vimcomplete).
+
+------
+------
+
+
 #### Omnifunc Autocompletion Source for Vimcomplete Plugin
 
 This plugin sources autocompletion items emitted by the function set in `omnifunc` Vim variable, for
